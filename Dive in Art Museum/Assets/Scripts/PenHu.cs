@@ -6,18 +6,19 @@ public class PenHu : MonoBehaviour
 {
     public GameObject bullet;
     public Transform firePointTrans;
-    public Vector3 shootForce;
+    public float minShootForce;
+    public float maxShootForce;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Shoot();
-        }
-    }
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        Shoot();
+    //    }
+    //}
     public void Shoot()
     {
         GameObject bulletInstance = Instantiate(bullet, firePointTrans.position, firePointTrans.rotation);
-        bulletInstance.GetComponent<Rigidbody>().AddForce(shootForce);
+        bulletInstance.GetComponent<Rigidbody>().AddForce(new Vector3(0,0,Random.Range(minShootForce,maxShootForce)));
     }
 }
