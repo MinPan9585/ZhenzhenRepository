@@ -19,6 +19,6 @@ public class PenHu : MonoBehaviour
     public void Shoot()
     {
         GameObject bulletInstance = Instantiate(bullet, firePointTrans.position, firePointTrans.rotation);
-        bulletInstance.GetComponent<Rigidbody>().AddForce(new Vector3(0,0,Random.Range(minShootForce,maxShootForce)));
+        bulletInstance.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0,0,Random.Range(minShootForce,maxShootForce)));
     }
 }
