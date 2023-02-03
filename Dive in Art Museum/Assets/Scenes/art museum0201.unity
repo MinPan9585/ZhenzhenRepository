@@ -1635,7 +1635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progress: 0
-  progressImage: {fileID: 0}
+  progressImage: {fileID: 1655841631}
 --- !u!114 &1655841631
 MonoBehaviour:
   m_ObjectHideFlags: 0
