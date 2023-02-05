@@ -16,7 +16,7 @@ public class Brush : MonoBehaviour
         {
             if (other.gameObject.GetComponent<MeshRenderer>().material.color == Color.white)
             {
-                Debug.Log("add one scroe");
+                //Debug.Log("add one scroe");
                 pm.UpdateProgress();
             }
             index = Random.Range(0,5);
