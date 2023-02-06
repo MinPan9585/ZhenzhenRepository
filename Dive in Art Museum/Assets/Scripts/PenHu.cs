@@ -9,13 +9,13 @@ public class PenHu : MonoBehaviour
     public float minShootForce;
     public float maxShootForce;
 
-    //private void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Space))
-    //    {
-    //        Shoot();
-    //    }
-    //}
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Shoot();
+        }
+    }
     public void Shoot()
     {
         GameObject bulletInstance = Instantiate(bullet, firePointTrans.position, firePointTrans.rotation);

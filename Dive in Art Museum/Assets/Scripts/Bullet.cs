@@ -7,7 +7,13 @@ public class Bullet : MonoBehaviour
 
     public Color[] paintColors;
     public int index;
-    public ProgressBar pb;
+    //public ProgressBar pb;
+    public ProgressMesh pm;
+
+    private void Start()
+    {
+        pm = GameObject.FindObjectOfType<ProgressMesh>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,8 +21,9 @@ public class Bullet : MonoBehaviour
         {
             if(other.gameObject.GetComponent<MeshRenderer>().material.color == Color.white)
             {
-                pb.progress += 0.0333f;
-                pb.progressImage.fillAmount = pb.progress;
+                pm.UpdateProgress();
+                //pb.progress += 0.0333f;
+                //pb.progressImage.fillAmount = pb.progress;
             }
             index = Random.Range(0, 4);
             other.gameObject.GetComponent<Renderer>().material.color = paintColors[index];

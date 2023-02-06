@@ -115,8 +115,9 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 0, g: 0.94425535, b: 1, a: 1}
   - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 1, b: 0.3391378, a: 1}
   index: 0
-  pb: {fileID: 0}
+  pm: {fileID: 0}
 --- !u!54 &3354855280218067379
 Rigidbody:
   m_ObjectHideFlags: 0
