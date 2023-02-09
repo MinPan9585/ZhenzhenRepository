@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/art museum0206.unity
+    guid: 41318556c2eb2574d9d1d47006933be0
   m_configObjects:
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: a79f5a44418676941af0c0a428b3b597, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ea8203196918bf74e979a8a58190fed3, type: 2}
