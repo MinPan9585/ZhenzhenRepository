@@ -9,6 +9,7 @@ public class ProgressMesh : MonoBehaviour
     public GameObject fireworks;
     public GameObject finalPlane;
     public Transform SpawnTrans;
+    public GameObject finalUI;
 
     void Start()
     {
@@ -32,6 +33,12 @@ public class ProgressMesh : MonoBehaviour
         {
             Instantiate(fireworks, SpawnTrans);
             Instantiate(finalPlane, SpawnTrans);
+            Invoke("ShowFinalUI", 10f);
         }
+    }
+
+    public void ShowFinalUI()
+    {
+        finalUI.SetActive(true);
     }
 }
