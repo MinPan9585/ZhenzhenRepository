@@ -29,7 +29,7 @@ public class ProgressMesh : MonoBehaviour
         progressNumber++;
         //Debug.Log(progressMesh[progressNumber].gameObject.name);
 
-        if(progressNumber == 24)
+        if(progressNumber == 25)
         {
             Instantiate(fireworks, SpawnTrans);
             Instantiate(finalPlane, SpawnTrans);
